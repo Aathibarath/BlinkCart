@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlinkCart Premium Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="BlinkCart home">
+      <span class="brand-mark">B</span>
+      <span>BlinkCart</span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#categories">Categories</a>
+      <a href="#deals">Deals</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-button" type="button" aria-label="Search">⌕</button>
+      <button class="icon-button" id="wishlistButton" type="button" aria-label="Wishlist">♡</button>
+      <button class="cart-button" id="openCart" type="button" aria-label="Open cart">
+        <span>Bag</span>
+        <strong id="cartCount">0</strong>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1500&q=85" alt="Premium lifestyle shopping collection">
+        <div class="glass-card">
+          <span>Luxury Sale</span>
+          <strong>Up to 35% OFF</strong>
+        </div>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow">Premium shopping experience</p>
+        <h1>Elevate everyday shopping with curated luxury essentials.</h1>
+        <p>Discover flagship technology, designer lifestyle picks, premium accessories, and limited-time offers in one elegant shopping destination.</p>
+        <div class="hero-actions">
+          <a class="primary-link" href="#shop">Shop Now</a>
+          <a class="secondary-link" href="#categories">Explore Collection</a>
+        </div>
+        <div class="hero-stats" aria-label="Store highlights">
+          <div><strong>50K+</strong><span>Happy customers</span></div>
+          <div><strong>120+</strong><span>Premium brands</span></div>
+          <div><strong>24/7</strong><span>Concierge support</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-strip" aria-label="Store benefits">
+      <article><span>⛟</span><strong>Free Shipping</strong><p>On premium orders across India</p></article>
+      <article><span>🔒</span><strong>Secure Payment</strong><p>Protected checkout and encrypted payments</p></article>
+      <article><span>↺</span><strong>Easy Returns</strong><p>7-day simple return support</p></article>
+      <article><span>◴</span><strong>24/7 Support</strong><p>Always-on customer assistance</p></article>
+    </section>
+
+    <section class="section-shell" id="categories">
+      <div class="section-heading">
+        <p class="eyebrow">Shop by lifestyle</p>
+        <h2>Featured Categories</h2>
+      </div>
+      <div class="category-grid" id="categoryGrid"></div>
+    </section>
+
+    <section class="section-shell" id="shop">
+      <div class="section-heading with-control">
+        <div>
+          <p class="eyebrow">Editor selected</p>
+          <h2>Featured Products</h2>
+        </div>
+        <label class="search-field">
+          <span>Search products</span>
+          <input id="searchInput" type="search" placeholder="iPhone, sneakers, camera...">
+        </label>
+      </div>
+      <div class="filter-pills" id="categoryTabs"></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="deal-section" id="deals">
+      <div>
+        <p class="eyebrow">Flash sale</p>
+        <h2>Premium deals end soon</h2>
+        <p>Enjoy member-only pricing on top-rated devices, fashion essentials, and creator gear before the timer runs out.</p>
+      </div>
+      <div class="countdown" id="countdown" aria-label="Flash sale countdown">
+        <div><strong>00</strong><span>Days</span></div>
+        <div><strong>00</strong><span>Hours</span></div>
+        <div><strong>00</strong><span>Mins</span></div>
+        <div><strong>00</strong><span>Secs</span></div>
+      </div>
+    </section>
+
+    <section class="section-shell split-showcase">
+      <div>
+        <p class="eyebrow">Trending products</p>
+        <h2>Most wanted this week</h2>
+        <div class="mini-list" id="trendingList"></div>
+      </div>
+      <div>
+        <p class="eyebrow">Best sellers</p>
+        <h2>Customer favorites</h2>
+        <div class="mini-list" id="bestSellerList"></div>
+      </div>
+      <div>
+        <p class="eyebrow">New arrivals</p>
+        <h2>Fresh in store</h2>
+        <div class="mini-list" id="arrivalList"></div>
+      </div>
+    </section>
+
+    <section class="why-section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">Why choose us</p>
+        <h2>A polished shopping journey from discovery to delivery.</h2>
+      </div>
+      <div class="why-grid">
+        <article><strong>Authentic premium products</strong><p>Every product is presented with clear pricing, ratings, and practical buying details.</p></article>
+        <article><strong>Responsive luxury interface</strong><p>Elegant spacing, refined cards, smooth hover states, and mobile-friendly layouts.</p></article>
+        <article><strong>Fast order processing</strong><p>The cart, totals, and checkout flow update instantly with a working Node backend.</p></article>
+      </div>
+    </section>
+
+    <section class="section-shell testimonials">
+      <div class="section-heading">
+        <p class="eyebrow">Testimonials</p>
+        <h2>Loved by modern shoppers</h2>
+      </div>
+      <div class="testimonial-grid">
+        <article>
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=220&q=85" alt="Customer profile">
+          <p>"The design feels premium and the checkout experience is incredibly smooth."</p>
+          <strong>Aarohi Mehta</strong>
+          <span>Verified buyer</span>
+        </article>
+        <article>
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=220&q=85" alt="Customer profile">
+          <p>"Product cards, pricing, and offers look like a real brand store."</p>
+          <strong>Rohan Kapoor</strong>
+          <span>Tech enthusiast</span>
+        </article>
+        <article>
+          <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=220&q=85" alt="Customer profile">
+          <p>"Clean, luxurious, and easy to browse on both laptop and phone."</p>
+          <strong>Naina Shah</strong>
+          <span>Style curator</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="brand-strip" aria-label="Brand partners">
+      <span>APPLE</span>
+      <span>SAMSUNG</span>
+      <span>SONY</span>
+      <span>NIKE</span>
+      <span>CANON</span>
+      <span>LOGITECH</span>
+    </section>
+
+    <section class="section-shell instagram">
+      <div class="section-heading">
+        <p class="eyebrow">Instagram gallery</p>
+        <h2>Shop the look</h2>
+      </div>
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=500&q=85" alt="Fashion shopping look">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=500&q=85" alt="Premium accessories flatlay">
+        <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=500&q=85" alt="Fashion retail collection">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=85" alt="Headphones product shot">
+      </div>
+    </section>
+
+    <section class="newsletter" id="contact">
+      <div>
+        <p class="eyebrow">Members club</p>
+        <h2>Get private drops and early sale access.</h2>
+      </div>
+      <form id="newsletterForm">
+        <input type="email" placeholder="Enter your email" required>
+        <button class="primary-button" type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="drawer-header">
+      <div>
+        <p class="eyebrow">Shopping bag</p>
+        <h2>Your selection</h2>
+      </div>
+      <button class="icon-button" id="closeCart" type="button" aria-label="Close cart">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-totals" id="cartTotals"></div>
+    <button class="primary-button wide" id="placeOrder" type="button">Pay</button>
+    <p class="status-message" id="orderStatus"></p>
+  </aside>
+
+  <dialog class="product-dialog" id="productDialog">
+    <button class="icon-button dialog-close" id="closeDialog" type="button" aria-label="Close details">×</button>
+    <div id="dialogContent"></div>
+  </dialog>
+
+  <div class="overlay" id="overlay"></div>
+
+  <footer class="footer">
+    <div>
+      <a class="brand footer-brand" href="#home"><span class="brand-mark">B</span><span>BlinkCart</span></a>
+      <p>A premium e-commerce experience for technology, fashion, lifestyle, and home essentials.</p>
+      <div class="socials"><a href="#">f</a><a href="#">x</a><a href="#">in</a><a href="#">ig</a></div>
+    </div>
+    <div>
+      <h3>Quick Links</h3>
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#deals">Deals</a>
+      <a href="#about">About</a>
+    </div>
+    <div>
+      <h3>Categories</h3>
+      <a href="#categories">Electronics</a>
+      <a href="#categories">Fashion</a>
+      <a href="#categories">Footwear</a>
+      <a href="#categories">Beauty</a>
+    </div>
+    <div>
+      <h3>Customer Support</h3>
+      <a href="#">Shipping Policy</a>
+      <a href="#">Returns</a>
+      <a href="#">Track Order</a>
+      <a href="#">Help Center</a>
+    </div>
+    <div>
+      <h3>Contact Details</h3>
+      <p>support@blinkcart.com</p>
+      <p>+91 98765 43210</p>
+      <p>Bengaluru, India</p>
+    </div>
+    <p class="creator-credit">Created by Aathi Barath R</p>
+    <p class="copyright">© 2026 BlinkCart. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
