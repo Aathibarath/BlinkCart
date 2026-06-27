@@ -95,7 +95,7 @@ BlinkCart/
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/YourGitHubUsername/BlinkCart.git
+git clone https://github.com/Aathibarath/BlinkCart.git
 ```
 
 ### Navigate to the Project
@@ -175,25 +175,27 @@ The project demonstrates:
 
 # 📷 Screenshots
 
-Add screenshots of:
+# 📷 Screenshots
 
-- Home Page
-- 
-- Product Listing
-- 
-- Product Details
-- 
-- Shopping Cart
-- 
-- Login Page
-- 
-- Checkout Page
+| Home Page | Products |
+|------------|----------|
+| ![](screenshot/home.png) | ![](screenshot/products.png) |
 
----
+| Product List | Categories |
+|--------------|------------|
+| ![](screenshot/productlslist.png) | ![](screenshot/categories.png) |
+
+| Deals | Trending Products |
+|--------|-------------------|
+| ![](screenshot/deals.png) | ![](screenshot/trends.png) |
+
+| Payment | Contact |
+|----------|---------|
+| ![](screenshot/payment.png) | ![](screenshot/contact.png) |
 
 # 👨‍💻 Author
 
-**Aadhi Barath**
+**Aathi Barath R**
 
 🎓 B.Tech Computer Science Engineering
 
