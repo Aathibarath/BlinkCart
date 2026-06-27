@@ -8,6 +8,10 @@ The application provides a seamless online shopping experience with product brow
 
 ---
 
+## 🌐 Live Demo
+
+🔗 https://blinkcart-uq1w.onrender.com
+
 # 🎯 Project Objective
 
 The objective of BlinkCart is to simulate a real-world online shopping platform where users can:
